@@ -11,7 +11,8 @@ import javax.inject.Inject
 
 class MakerRepository @Inject constructor(
     private val networkHandler: NetworkHandler,
-    private val networkService: NetworkService) : MakerApi, BaseRepository() {
+    private val networkService: NetworkService
+) : MakerApi, BaseRepository() {
 
     override fun makerDetail(makerId: String): Either<Failure, Maker> {
         return when (networkHandler.isNetworkAvailable()) {

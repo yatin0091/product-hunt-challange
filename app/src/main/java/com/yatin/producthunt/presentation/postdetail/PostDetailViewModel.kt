@@ -11,7 +11,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class PostDetailViewModel @Inject constructor(
-    private val getPostDetail: GetPostDetail) : BaseViewModel(){
+    private val getPostDetail: GetPostDetail
+) : BaseViewModel() {
 
     private val _postDetail: MutableLiveData<PostDetailView> = MutableLiveData()
     val postDetail: LiveData<PostDetailView> = _postDetail

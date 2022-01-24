@@ -7,9 +7,6 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton
 
-/**
- * Injectable class which returns information about the network connection state.
- */
 @Singleton
 class NetworkHandler
 @Inject constructor(@ApplicationContext private val context: Context) {

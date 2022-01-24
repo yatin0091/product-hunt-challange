@@ -5,11 +5,9 @@ import android.view.View
 import androidx.annotation.StringRes
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.yatin.producthunt.R
 import com.yatin.producthunt.databinding.FragmentHomeBinding
 import com.yatin.producthunt.domain.core.Failure
-import com.yatin.producthunt.domain.entities.Post
 import com.yatin.producthunt.presentation.core.BaseFragment
 import com.yatin.producthunt.presentation.core.extension.*
 import com.yatin.producthunt.presentation.core.navigation.Navigator

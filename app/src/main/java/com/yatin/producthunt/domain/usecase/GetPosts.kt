@@ -6,6 +6,6 @@ import com.yatin.producthunt.domain.entities.Post
 import javax.inject.Inject
 
 class GetPosts @Inject constructor(private val postApi: PostApi) :
-    BaseUseCase<List<Post>, BaseUseCase.None>(){
+    BaseUseCase<List<Post>, BaseUseCase.None>() {
     override suspend fun run(params: None) = postApi.posts()
 }

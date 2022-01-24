@@ -8,7 +8,10 @@ import com.yatin.producthunt.R
 import com.yatin.producthunt.databinding.FragmentPostDetailBinding
 import com.yatin.producthunt.domain.core.Failure
 import com.yatin.producthunt.presentation.core.BaseFragment
-import com.yatin.producthunt.presentation.core.extension.*
+import com.yatin.producthunt.presentation.core.extension.close
+import com.yatin.producthunt.presentation.core.extension.failure
+import com.yatin.producthunt.presentation.core.extension.loadGifFromUrl
+import com.yatin.producthunt.presentation.core.extension.observe
 import com.yatin.producthunt.presentation.core.navigation.Navigator
 import com.yatin.producthunt.presentation.home.PostView
 import dagger.hilt.android.AndroidEntryPoint
@@ -29,7 +32,7 @@ class PostDetailFragment :
     @Inject
     lateinit var navigator: Navigator
 
-    private val postDetailViewModel : PostDetailViewModel by viewModels()
+    private val postDetailViewModel: PostDetailViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,7 +57,7 @@ class PostDetailFragment :
             binding.voteCount.text = it.votesCount.toString()
             binding.makers.text = it.makers.joinToString()
             binding.userImage.setOnClickListener {
-                navigator.showMakerProfile(requireActivity(), "Dummy")
+                navigator.showMakerProfile(requireActivity(), postDetailView.makers[0])
             }
         }
     }

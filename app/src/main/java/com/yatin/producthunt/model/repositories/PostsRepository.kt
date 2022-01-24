@@ -22,7 +22,6 @@ class PostsRepository @Inject constructor(
         }
     }
 
-
     override fun postDetails(postId: String): Either<Failure, PostDetail> {
         return when (networkHandler.isNetworkAvailable()) {
             true -> {

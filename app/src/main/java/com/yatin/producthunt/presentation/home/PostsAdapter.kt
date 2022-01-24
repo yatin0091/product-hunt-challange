@@ -5,11 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.yatin.producthunt.R
 import com.yatin.producthunt.databinding.RowPostBinding
-import com.yatin.producthunt.domain.entities.Post
 import com.yatin.producthunt.presentation.core.extension.inflate
-import com.yatin.producthunt.presentation.core.extension.loadFromUrl
 import com.yatin.producthunt.presentation.core.extension.loadGifFromUrl
-import com.yatin.producthunt.presentation.core.navigation.Navigator
 import javax.inject.Inject
 import kotlin.properties.Delegates
 

@@ -2,12 +2,9 @@ package com.yatin.producthunt.presentation.core
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewbinding.ViewBinding
 import com.yatin.producthunt.R
 import com.yatin.producthunt.databinding.ActivityMainBinding
 import com.yatin.producthunt.presentation.core.extension.inTransaction
-import com.yatin.producthunt.presentation.home.HomeFragment
-import dagger.hilt.android.AndroidEntryPoint
 
 /**
  * Base Activity class with helper methods for handling fragment transactions and back button
@@ -15,7 +12,6 @@ import dagger.hilt.android.AndroidEntryPoint
  *
  * @see AppCompatActivity
  */
-
 abstract class BaseActivity : AppCompatActivity() {
 
     internal lateinit var binding: ActivityMainBinding

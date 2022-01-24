@@ -5,8 +5,10 @@ import com.yatin.producthunt.domain.entities.Post
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class PostView(val id: String, val name: String,
-                    val thumbnail: String, val tagline: String, val votesCount: Int, val makers : Array<String>) :
+data class PostView(
+    val id: String, val name: String,
+    val thumbnail: String, val tagline: String, val votesCount: Int, val makers: Array<String>
+) :
     Parcelable
 
 fun Post.toPostView() =

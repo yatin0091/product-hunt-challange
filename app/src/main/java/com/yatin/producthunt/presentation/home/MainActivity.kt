@@ -1,9 +1,8 @@
 package com.yatin.producthunt.presentation.home
 
-import com.yatin.producthunt.presentation.core.BaseActivity
 import android.content.Context
 import android.content.Intent
-import com.yatin.producthunt.databinding.ActivityMainBinding
+import com.yatin.producthunt.presentation.core.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

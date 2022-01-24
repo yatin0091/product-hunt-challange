@@ -6,6 +6,6 @@ import com.yatin.producthunt.domain.entities.Post
 import com.yatin.producthunt.domain.entities.PostDetail
 
 interface PostApi {
-    fun posts() : Either<Failure, List<Post>>
-    fun postDetails(postId: String) : Either<Failure, PostDetail>
+    fun posts(): Either<Failure, List<Post>>
+    fun postDetails(postId: String): Either<Failure, PostDetail>
 }

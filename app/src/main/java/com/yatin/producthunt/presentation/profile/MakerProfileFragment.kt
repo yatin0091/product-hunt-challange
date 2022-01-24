@@ -13,8 +13,6 @@ import com.yatin.producthunt.presentation.core.extension.failure
 import com.yatin.producthunt.presentation.core.extension.loadFromUrl
 import com.yatin.producthunt.presentation.core.extension.observe
 import com.yatin.producthunt.presentation.core.navigation.Navigator
-import com.yatin.producthunt.presentation.home.PostView
-import com.yatin.producthunt.presentation.postdetail.PostDetailFragment
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

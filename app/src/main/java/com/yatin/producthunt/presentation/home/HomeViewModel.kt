@@ -12,7 +12,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    private val getPosts: GetPosts) : BaseViewModel() {
+    private val getPosts: GetPosts
+) : BaseViewModel() {
 
     private val _posts: MutableLiveData<List<PostView>> = MutableLiveData()
     val posts: LiveData<List<PostView>> = _posts

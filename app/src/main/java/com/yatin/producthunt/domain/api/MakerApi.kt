@@ -5,5 +5,5 @@ import com.yatin.producthunt.domain.core.Failure
 import com.yatin.producthunt.domain.entities.Maker
 
 interface MakerApi {
-    fun makerDetail(makerId: String) : Either<Failure, Maker>
+    fun makerDetail(makerId: String): Either<Failure, Maker>
 }
